@@ -1,74 +1,186 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Blinker:wght@300;400;600;700&family=Poppins:wght@200;300;400;500;600;700;800&display=swap');
+
 
 *{
-    box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: 'Nunito', sans-serif;
-    font-size: 20px;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+
 }
 
-.header{
-    background-color: #1b3039;
+.nav{
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    height: 85px;
-    padding: 5px 10%;
+    height: 50px;
+    margin-top: 1%;
 }
 
-.header .logo{
+li:hover{
+    color: red;
+}
+
+li{
+    list-style: none;
+    cursor: pointer;
+    padding: 1%;
+}
+/*COLOR Y RADIO DE LA OPCION INCIIO*/
+.nav > li:nth-child(2){
+    font-weight: 600; 
+    color: rgb(252, 255, 255);
+    background: black;
+    border-radius: 40%;
+}
+/*PARA LETRAS NEGRITAS*/
+.nav > li:nth-child(3){
+    font-weight: 600;       
+}
+/*ICONO DE MENSAJE, TAMAÑO Y COLOR*/
+.nav > li:nth-child(6){
+    font-size: 20px;
+    color: gray; 
+
+}
+.nav > li:nth-child(6):hover{
+    color: red;
+}
+.search{   
+    width: 70%;
+    position: relative;
+    padding: 1%;    
+}
+
+/*CSS DEL INPUT*/
+.search > input{
+    
+    border: 0;
+    width: 100%;
+    height: 40px;
+    border-radius: 20px;
+    margin-top: -5px;
+    padding: 1%;
+    background-color: rgba(128, 128, 128, 0.212);
+    background-image: url(search.png);  
+}
+.search > input:focus{
+    outline: none;
+}
+/* ICONO DE NOTIFICACION*/
+.notification i{
+    font-size: 20px;
+    color: gray;
+    margin-top: 5px;
+
+}
+.notification i:hover{
+    color: rgba(0, 17, 255, 0.733);
+}
+
+/*IMAGEN DE PERFIL*/
+.profile img{
+    object-fit: cover;
+    border-radius: 50%;
+}
+/**CSS DE IMAGENES*/
+.container{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill,250px);
+    grid-template-rows: auto;
+    justify-content: center;
+    column-gap: 15px;
+    /* gap: 1%; */
+    /* margin: 2%; */
+
+}
+.container > div{
+    padding: 0;
+    margin: 15px 10px;
+    border-radius: 20px;
+}
+.card > iframe{
+    border-radius:25px ;
+}
+.container  img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
     cursor: pointer;
 }
 
-.header .logo img{
-    height: 30px;
-    width: auto;
-    transition: all 0.3s;
+.video{
+    border-radius: 5%;
 }
 
-.header .logo img:hover{
-    transform: scale(1.2);
+.card_small{
+    grid-row-end: span 26;
+}
+.card_midium{
+    grid-row-end: span 33;
 }
 
-.header .nav-links{
-    list-style: none;
+.card_large{
+    grid-row-end: span 50;
 }
 
-.header .nav-links li{
-    display: inline-block;
-    padding: 0 20px;    
+
+@media all and(min-width: 421px) and (max-width: 768px){
+    .container{
+        grid-template-columns: repeat(auto-fill,200px);
+    }
+    .search{
+        display: none;
+    }
+    .nav > li:nth-child(2){
+        font-weight: 500;
+        font-size: 15px;
+        
+    }
 }
 
-.header .nav-links li:hover{
-    transform: scale(1.1);
-}
+/*REPONSIVE*/
+@media all and (min-width:50px) and (max-width: 420px){
+    .container{
+        grid-template-columns: repeat(auto-fill,150px);
+    }
+    .container > div{
+        padding: 0;
+        margin: 8px 5px;
+        border-radius: 20px;
+    
+    }
+    .nav{
+        padding: 2%;
+    }
+    .search > input{
+        /* display: none; */
+        padding: 10%;
+    }
+    .nav > li>img{
+        width: 30px;
+        height: 30px;
+        
+    }
+    .nav > li {
+        font-size: 12px;
+        
+    }
+    .nav > li i{
+        display: none;
+        
+    }
+    .nav > li:nth-child(2){
+        display: none;
+        
+    }
+    .nav > li:nth-child(3){
+        display: none;
+        
+    }
+    .card > iframe{
+        border-radius:25px ;
+    }
 
-.header .nav-links a{
-    font-size: 700;
-    color: #eceff1;
-    text-decoration: none;    
-}
-
-.header .nav-links li a:hover{
-    color: #ffbc0e;
-}
-input{
-    background: #fff ;
-    background-image: url("img/icon-search.png");
-}
-/**CSS DE IMAGENES*/
-img{
-    max-width: 220px;
-    border-radius: 10%;
-}
-
-video{
-    max-width: 220px;
-    border-radius: 10%;
-}
-
-.card-image{
-    display: flex;
-    flex-wrap: wrap;
 }

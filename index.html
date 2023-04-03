@@ -1,151 +1,149 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Clon-Pinterest</title>
-    <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-    <header class="header">
-        <div class="logo">
-            <a href="https://www.pinterest.com.mx/">
-            <img src="img/pinterest-logo.png" alt="LogoPinterest">
-            </a>
-        </div>
-        <nav>
-           <ul class="nav-links">
-                <li><a href="#">Inicio</a></li>
-                <li><a href="#">Crear</a></li>
-                <li><input type="text" name="search" placeholder="Search"></li>
-           </ul>            
-        </nav>
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+      integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <header>
+      <nav class="nav">
+        <li>
+          <a href="https://www.pinterest.com.mx/">
+            <img
+              src="img/pinterest-logo.png"
+              alt="logo"
+              width="30"
+              height="30"
+            />
+          </a>
+        </li>
+        <li>Inicio</li>
+        <li>Crear</li>
+        <li class="search"><input type="search" placeholder="Search" /></li>
+        <li class="notification"><i class="fas fa-bell"></i></li>
+        <li><i class="far fa-comment-dots"></i></li>
+        <li class="profile">
+          <img src="img/40.jpg" alt="profile" width="40" height="40" />
+        </li>
+      </nav>
     </header>
 
-    <main>
-        <div class="card-image">
-            <!--PRIMER DIV-->
-            <div>
-                <img src="img/5.jpg" alt="">
-            </div>
-            <!--SEGUNDO DIV-->
-            <div>
-                <video src="video/1.mp4"></video>
-            </div>
-            <!--TERCER DIV-->
-            <div>
-                <img src="img/42.jpg" alt="">
-            </div>
-            <!--CUARTO DIV-->
-            <div>
-                <video src="video/2.mp4"></video>
-            </div>
-            <!--QUINTO DIV-->
-            <div>
-                <img src="img/12.jpg" alt="">
-            </div>
-            <!--SEXTO DIV-->
-            <div>
-                <img src="img/40.jpg" alt="">
-            </div>
-            <!--SEPTIMO DIV-->
-            <div>
-                <video src="video/3.mp4"></video>
-            </div>
-            <!--OCTAVO DIV-->
-            <div>
-                <img src="img/28.jpg" alt="">
-            </div>
-            <!--NOVENO DIV-->
-            <div>
-                <video src="video/5.mp4"></video>
-            </div>
-            <!--DECIMO DIV-->
-            <div>
-                <img src="img/30.jpg" alt="">
-            </div>
-            <!--DECIMO PRIMER DIV-->
-            <div>
-                <img src="img/32.jpg" alt="">
-            </div>
-            <!--DECIMO SEGUNDO DIV-->
-            <div>
-                <img src="img/16.jpg" alt="">
-            </div>
-            <!--DECIMO TERCER DIV-->
-            <div>
-                <video src="video/6.mp4"></video>
-            </div>
-            <!--DECIMO CUARTO DIV-->
-            <div>
-                <img src="img/20.jpg" alt="">
-            </div>
-            <!--DECIMO QUINTO DIV-->
-            <div>
-                <img src="img/37.jpg" alt="">
-            </div>
-            <!--DECIMO SEXTO DIV-->
-            <div>
-                <img src="img/3.jpg" alt="">
-            </div>
-            <!--DECIMO SEPTIMO DIV-->
-            <div>
-                <img src="img/39.jpg" alt="">
-            </div>
-            <!--DECIMO OCTAVO DIV-->
-            <div>
-                <img src="img/18.jpg" alt="">
-            </div>
-            <!--DECIMO NOVENO DIV-->
-            <div>
-                <img src="img/25.jpg" alt="">
-            </div>
-            <!--VIGECIMO DIV-->
-            <div>
-                <img src="img/31.jpg" alt="">
-            </div>
-            <!--VIGECIMO PRIMER DIV-->
-            <div>
-                <img src="img/21.jpg" alt="">
-            </div>
-            <!--VIGECIMO SEGUNDO DIV-->
-            <div>
-                <img src="img/6.jpg" alt="">
-            </div>
-            <!--VIGECIMO TERCER DIV-->
-            <div>
-                <img src="img/19.jpg" alt="">
-            </div>
-            <!--VIGECIMO CUARTO DIV-->
-            <div>
-                <video src="video/7.mp4"></video>
-            </div>
-            <!--VIGECIMO QUINTO DIV-->
-            <div>
-                <img src="img/35.jpg" alt="">
-            </div>
-            <!--VIGECIMO SEXTO DIV-->
-            <div>
-                <img src="img/10.jpg" alt="">
-            </div>
-            <!--VIGECIMO SEPTIMO DIV-->
-            <div>
-                <img src="img/36.jpg" alt="">
-            </div>
-            <!--VIGECIMO OCTAVO DIV-->
-            <div>
-                <img src="img/9.jpg" alt="">
-            </div>
-            <!--VIGECIMO NOVENO DIV-->
-            <div>
-                <img src="img/34.jpg" alt="">
-            </div>
-            <!--TRIGECIMO DIV-->
-            <div>
-                <video src="video/8.mp4"></video>
-            </div>
-        </div>
-    </main>
-</body>
+    <div class="container">
+
+      <div class="card card_small">
+        <img src="img/30.jpg" alt="" />
+      </div>
+
+      <div class="card card_large">
+        <img src="img/9.jpg" alt="" />
+      </div>
+
+      <div class="card card_small">
+        <img src="img/32.jpg" alt="" />
+      </div>
+
+      <div class="card_small">
+        <iframe
+          class="video"
+          src="video/6.mp4"
+          height="100%"
+          width="100%"
+          frameborder="0"
+          scrolling="no"
+          allow="autoplay"
+        ></iframe>
+      </div>
+      <div class="card card_midium">
+        <img src="img/13.jpg" alt="" />
+      </div>
+      <div class="card card_small">
+        <img src="img/45.jpg" alt="" />
+      </div>
+      <div class="card card_midium">
+        <img src="img/18.jpg" alt="" />
+      </div>
+      <div class="card card_large">
+        <img src="img/11.jpg" alt="" />
+      </div>
+
+      <div class="card card_small">
+        <img src="img/36.jpg" alt="" />
+      </div>
+      <div class="card card_midium">
+        <img src="img/6.jpg" alt="" />
+      </div>
+
+      <div class="card card_small">
+        <img src="img/1.jpg" alt="" />
+      </div>
+      <div class="card card_midium">
+        <img src="img/35.jpg" alt="" />
+      </div>
+      <div class="card card_small">
+        <img src="img/29.jpg" alt="" />
+      </div>
+      <div class="card card_midium">
+        <img src="img/33.jpg" alt="" />
+      </div>
+      <div class="card card_large">
+        <img src="img/12.jpg" alt="" />
+      </div>
+      <div class="card card_large">
+        <img src="img/26.jpg" alt="" />
+      </div>
+
+      <div class="card card_large">
+        <iframe
+          src="video/7.mp4"
+          height="100%"
+          width="100%"
+          frameborder="0"
+          scrolling="no"
+        ></iframe>
+      </div>
+
+      <div class="card card_small">
+        <img src="img/4.jpg" alt="" />
+      </div>
+      <div class="card card_midium">
+        <img src="img/31.jpg" alt="" />
+      </div>
+      <div class="card card_small">
+        <img src="img/20.jpg" alt="" />
+      </div>
+      <div class="card card_midium">
+        <img src="img/44.jpg" alt="" />
+      </div>
+      <div class="card card_large">
+        <img src="img/7.jpg" alt="" />
+      </div>
+      <div class="card card_large">
+        <img src="img/27.jpg" alt="" />
+      </div>
+      <div class="card card_small">
+        <img src="img/34.jpg" alt="" />
+      </div>
+      <div class="card card_midium">
+        <img src="img/25.jpg" alt="" />
+      </div>
+      <div class="card card_small">
+        <img src="img/17.jpg" alt="" />
+      </div>
+      <div class="card card_midium">
+        <img src="img/21.jpg" alt="" />
+      </div>
+      <div class="card card_large">
+        <img src="img/37.jpg" alt="" />
+      </div>
+    </div>
+  </body>
 </html>
