@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Blinker:wght@300;400;600;700&family=Poppins:wght@200;300;400;500;600;700;800&display=swap');
 
-
 *{
     margin: 0;
     padding: 0;
@@ -10,10 +9,14 @@
 }
 
 .nav{
+    background: #fff;
     display: flex;
     justify-content: space-between;
-    height: 50px;
-    margin-top: 1%;
+    height: 60px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    width: 100%;
 }
 
 li:hover{
@@ -83,6 +86,11 @@ li{
     border-radius: 50%;
 }
 /**CSS DE IMAGENES*/
+/*
+main{
+    margin-top: 8%;
+    background: #7ec212;
+}*/
 .container{
     width: 100%;
     display: grid;
@@ -90,9 +98,7 @@ li{
     grid-template-rows: auto;
     justify-content: center;
     column-gap: 15px;
-    /* gap: 1%; */
-    /* margin: 2%; */
-
+    margin-top: 6%;
 }
 .container > div{
     padding: 0;
@@ -117,14 +123,27 @@ li{
 .card_small{
     grid-row-end: span 26;
 }
+/*HOVER DE IMAGEN PEQUEÑA*/
+.card_small:hover .image{
+    opacity: 0.85;
+    cursor: zoom-in;
+}
 .card_midium{
     grid-row-end: span 33;
 }
-
+/*HOVER DE IMAGEN MEDIANA*/
+.card_midium:hover .image{
+    opacity: 0.85;
+    cursor: zoom-in;
+}
 .card_large{
     grid-row-end: span 50;
 }
-
+/*HOVER DE IMAGEN MEDIANA*/
+.card_large:hover .image{
+    opacity: 0.85;
+    cursor: zoom-in;
+}
 
 @media all and(min-width: 421px) and (max-width: 768px){
     .container{
@@ -182,5 +201,8 @@ li{
     .card > iframe{
         border-radius:25px ;
     }
+}
+
+img{
 
 }
